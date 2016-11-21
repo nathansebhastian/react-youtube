@@ -1,25 +1,19 @@
-# ReduxSimpleStarter
+# React Youtube Video Player
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+This is a lab project to create video player site like YouTube connected to YouTube's API.
 
-###Getting Started###
-
-There are two methods for getting started with this repo.
-
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
+###How to Install?###
+Clone this repo, install dependencies, then start the process with the following:
 
 ```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
+	> git clone https://github.com/yonathansebhastian/ReduxSimpleStarter.git
 	> npm install
 	> npm start
+	> Open browser at localhost:8080
 ```
-
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-	> npm install
-	> npm start
-```
+####What I Learned from this project####
+* Using React components
+* How to troubleshoot code errors
+* What webpack and babel are used for
+* Using JSX
+* YouTube video api
