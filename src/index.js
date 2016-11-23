@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
+import _ from 'lodash';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+import MyHeader from './components/header';
 
 const API_KEY = 'AIzaSyBQzgSB0LbfFHmfD9uSq-bfWUfYw4L7bFY';
+
 
 // Create a new component class. This component should produce some HTML
 class App extends Component {
@@ -29,9 +32,11 @@ class App extends Component {
   }
 
   render() {
+    const videoSearch = _.debounce((term)=> {this.videoSearch(term)}, 400);
     return (
       <div>
-        <SearchBar onTermChange={term => this.videoSearch(term)}/>
+        <MyHeader />
+        <SearchBar onTermChange={videoSearch}/>
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList
           onVideoSelect={selectedVideo=> this.setState({selectedVideo})}

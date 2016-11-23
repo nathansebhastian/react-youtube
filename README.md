@@ -6,7 +6,7 @@ This is a lab project to create video player site like YouTube connected to YouT
 Clone this repo, install dependencies, then start the process with the following:
 
 ```
-	> git clone https://github.com/yonathansebhastian/ReduxSimpleStarter.git
+	> git clone https://github.com/yonathansebhastian/react-youtube.git
 	> npm install
 	> npm start
 	> Open browser at localhost:8080
@@ -22,6 +22,7 @@ Clone this repo, install dependencies, then start the process with the following
 * Handling user event
 * State in React
 * Passing state from index to video list to video list item (yep!)
+* Using lodash debounce to manipulate search behavior
 
 ####Things noted####
 * Add keys to list and arrays (best practice)
