@@ -21,7 +21,8 @@ Clone this repo, install dependencies, then start the process with the following
 * Class-based component
 * Handling user event
 * State in React
+* Passing state from index to video list to video list item (yep!)
 
 ####Things noted####
 * Add keys to list and arrays (best practice)
-* Before creating a new component, ask this: do I expect this component to maintain any type of state? class: function. 
+* Before creating a new component, ask this: do I expect this component to maintain any type of state? class: function.
